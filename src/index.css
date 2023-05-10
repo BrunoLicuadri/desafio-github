@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --color-bg-primary: #e4e3e3;
+  --color-bg-seconddary: #e6f7ff;
+  --color-bg-header: #1890ff;
+  --color-bg-btn: #1890ff;
+
+  --color-font-head-title: #fff;
+  --color-font-btn: #fff;
+
+  --color-font-primary: #000;
+  --color-font-secondary: #7E7E7E;
+  --color-font-terciary: #262626;
+  --color-font-quaternary: #1890ff;
+
+  --color-font-placeholder: #BFBFBF;
+  --color-font-input: #5c5858;
+  --color-font-user-profile: #737373;
+  --color-font-user-gitlink: #0029ff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+html, body {
+  background-color: var(--gk-color-bg-primary);
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+main {
+  padding: 0 40px;
+}

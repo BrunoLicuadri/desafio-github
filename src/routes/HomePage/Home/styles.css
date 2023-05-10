@@ -1,0 +1,28 @@
+.home-intro{
+    margin: 30px 0;
+}
+
+.home-intro h1{
+    font-size: 48px;
+    color: var(--color-font-primary);
+}
+
+.home-intro p{
+    font-size: 24px;
+    color: var(--color-font-secondary);
+}
+
+.begin-btn {
+    background-color: var(--color-bg-btn);
+    color: var(--color-font-btn);
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.begin-btn p{
+    font-size: 16px;
+}
