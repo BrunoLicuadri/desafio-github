@@ -5,6 +5,8 @@
   --color-bg-seconddary: #e6f7ff;
   --color-bg-header: #1890ff;
   --color-bg-btn: #1890ff;
+  --color-bg-profile-container: #f5f5f5;
+  --color-bg-profile-box: #fff;
 
   --color-font-head-title: #fff;
   --color-font-btn: #fff;
@@ -41,6 +43,10 @@ a:hover {
 
 main {
   padding: 0 40px;
+}
+
+.dflex{
+  display: flex;
 }
 
 /* BUTTON´s */
