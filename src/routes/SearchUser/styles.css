@@ -3,3 +3,10 @@
     font-size: 38px;
     color: var(--color-font-terciary);
 }
+
+.find-btn{
+    background: none;
+    border: none;
+    color: var(--color-font-btn);
+    font-size: 16px;
+}

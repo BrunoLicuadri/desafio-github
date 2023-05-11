@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 export default function Home() {
@@ -9,7 +10,9 @@ export default function Home() {
                     <p>GK - God Knows: Faith in Java Learning</p>
                 </div>
                 <div className="begin-btn">
-                    <p>Começar</p>
+                    <Link to="/searchuser">
+                        <p>Começar</p>
+                    </Link>
                 </div>
             </section>
         </main>

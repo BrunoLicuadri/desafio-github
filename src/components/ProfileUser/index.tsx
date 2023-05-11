@@ -1,12 +1,16 @@
 import './styles.css';
-import profileImg from "../../../images/profilemg.png";
+import { ProfileDTO } from '../GitProfile';
 
-export default function ProfileUser() {
+type Props = {
+    userDTO: ProfileDTO;
+}
+
+export default function ProfileUser({userDTO} : Props) {
     return (
         <section>
             <div className="profile-container">
                 <div>
-                    <img className="imgProfile" src={profileImg} alt="profile-img" />
+                    <img className="imgProfile" src={userDTO.userImg} alt={userDTO.name} />
                 </div>
                 <div className="profile-info-container">
                     <div className="profile-info-text">
@@ -14,19 +18,19 @@ export default function ProfileUser() {
                     </div>
                     <div className="profile-box dflex">
                         <h4>Perfil:</h4>
-                        <p>link</p> 
+                        <a href={userDTO.link}></a>
                     </div>
                     <div className="profile-box dflex">
                         <h4>Seguidores:</h4>
-                        <p>4397</p>
+                        <p>{userDTO.followers}</p>
                     </div>
                     <div className="profile-box dflex">
                         <h4>Localidade:</h4>
-                        <p>Brazil</p>
+                        <p>{userDTO.localtion}</p>
                     </div>
                     <div className="profile-box dflex">
                         <h4>Nome:</h4> 
-                        <p>Nelio Alves</p> 
+                        <p>{userDTO.name}</p> 
                     </div>
                 </div>
             </div>
