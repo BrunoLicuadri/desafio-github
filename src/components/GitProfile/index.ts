@@ -1,7 +1,7 @@
 export type ProfileDTO={
     name: string;
-    link: string;
+    html_url: string;
     followers: number;
-    localtion: string;
-    userImg: string;
+    location: string;
+    avatar_url: string;
 }

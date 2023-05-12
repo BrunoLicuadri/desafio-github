@@ -6,7 +6,6 @@ import App from './App.tsx'
 import Home from './routes/HomePage/Home/index.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import SearchUser from './routes/SearchUser/index.tsx'
-import ProfileUser from './components/ProfileUser/index.tsx'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -15,7 +14,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <Route path="/" element={<App/>} >
           <Route index element={<Home/>} />
           <Route path="searchuser" element={<SearchUser />} >
-            <Route path="profileuser/:userlogin" element={<ProfileUser/>} />
           </Route>
         </Route>
       </Routes>

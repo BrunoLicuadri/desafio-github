@@ -51,3 +51,8 @@
 .profile-box p{
     margin-left: 5px;
 }
+
+.prof-Link {
+    margin-left: 5px;
+    color: var(--color-font-user-gitlink);
+}

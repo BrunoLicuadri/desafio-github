@@ -10,7 +10,7 @@ export default function ProfileUser({userDTO} : Props) {
         <section>
             <div className="profile-container">
                 <div>
-                    <img className="imgProfile" src={userDTO.userImg} alt={userDTO.name} />
+                    <img className="imgProfile" src={userDTO.avatar_url} alt={userDTO.name} />
                 </div>
                 <div className="profile-info-container">
                     <div className="profile-info-text">
@@ -18,7 +18,7 @@ export default function ProfileUser({userDTO} : Props) {
                     </div>
                     <div className="profile-box dflex">
                         <h4>Perfil:</h4>
-                        <a href={userDTO.link}></a>
+                        <a className="prof-Link" href={userDTO.html_url}>{userDTO.html_url}</a>
                     </div>
                     <div className="profile-box dflex">
                         <h4>Seguidores:</h4>
@@ -26,7 +26,7 @@ export default function ProfileUser({userDTO} : Props) {
                     </div>
                     <div className="profile-box dflex">
                         <h4>Localidade:</h4>
-                        <p>{userDTO.localtion}</p>
+                        <p>{userDTO.location}</p>
                     </div>
                     <div className="profile-box dflex">
                         <h4>Nome:</h4> 
